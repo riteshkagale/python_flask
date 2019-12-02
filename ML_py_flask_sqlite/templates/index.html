@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Linear Regression</title>
+</head>
+<body>
+    <form action="/" method="post">
+        Year of Experience: <input type="number" placeholder="Year Of Experience" name="experiences">
+        <input type="submit" value="Submit">
+        {% for experience in experiences%}
+            <div>{{experience}}</div>
+        {% endfor %}
+    </form>
+</body>
+</html>
